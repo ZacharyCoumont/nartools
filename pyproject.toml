@@ -1,0 +1,14 @@
+[project]
+name = "nartools"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.12"
+dependencies = [
+    "levenshtein>=0.27.1",
+    "probableparsing>=0.0.1",
+    "psycopg>=3.2.10",
+    "pypika>=0.48.9",
+    "python-crfsuite>=0.9.11",
+    "python-dotenv>=1.1.1",
+    "unidecode>=1.4.0",
+]
