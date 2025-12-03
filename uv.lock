@@ -2,6 +2,15 @@ version = 1
 requires-python = ">=3.12"
 
 [[package]]
+name = "canaddress"
+version = "0.5.16"
+source = { git = "https://github.com/ZacharyCoumont/canaddress.git#5f5cb8afca59892d330cab810d0a01b79cc4e093" }
+dependencies = [
+    { name = "probableparsing" },
+    { name = "python-crfsuite" },
+]
+
+[[package]]
 name = "levenshtein"
 version = "0.27.3"
 source = { registry = "https://pypi.org/simple" }
@@ -72,6 +81,7 @@ name = "nartools"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
+    { name = "canaddress" },
     { name = "levenshtein" },
     { name = "probableparsing" },
     { name = "psycopg" },
@@ -83,6 +93,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
+    { name = "canaddress", git = "https://github.com/ZacharyCoumont/canaddress.git" },
     { name = "levenshtein", specifier = ">=0.27.1" },
     { name = "probableparsing", specifier = ">=0.0.1" },
     { name = "psycopg", specifier = ">=3.2.10" },

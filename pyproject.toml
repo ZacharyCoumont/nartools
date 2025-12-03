@@ -4,6 +4,7 @@ version = "0.1.0"
 description = "Add your description here"
 requires-python = ">=3.12"
 dependencies = [
+    "canaddress",
     "levenshtein>=0.27.1",
     "probableparsing>=0.0.1",
     "psycopg>=3.2.10",
@@ -12,3 +13,9 @@ dependencies = [
     "python-dotenv>=1.1.1",
     "unidecode>=1.4.0",
 ]
+
+[tool.uv.sources]
+canaddress = { git = "https://github.com/ZacharyCoumont/canaddress.git" }
+
+[tool.setuptools.packages.find]
+where = ["src"]

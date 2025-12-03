@@ -6,7 +6,7 @@ from unidecode import unidecode
 from Levenshtein import distance
 from pypika import Query, Criterion, functions as fn
 
-from util import get_table
+from .util import get_table
 
 street_type_mapping = {
     "STREET": "ST",

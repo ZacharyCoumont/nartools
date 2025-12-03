@@ -1,6 +1,6 @@
 from psycopg.rows import dict_row
 
-from util import get_table
+from .util import get_table
 
 def reverse_geocode(conn, latitude, longitude):
     table = get_table()
