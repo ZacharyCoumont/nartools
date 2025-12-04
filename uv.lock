@@ -4,7 +4,7 @@ requires-python = ">=3.12"
 [[package]]
 name = "canaddress"
 version = "0.5.16"
-source = { git = "https://github.com/ZacharyCoumont/canaddress.git#5f5cb8afca59892d330cab810d0a01b79cc4e093" }
+source = { git = "https://github.com/ZacharyCoumont/canaddress.git#f50dc1c8d051dab0de143852fb51a9c93ef47b39" }
 dependencies = [
     { name = "probableparsing" },
     { name = "python-crfsuite" },
@@ -79,7 +79,7 @@ wheels = [
 [[package]]
 name = "nartools"
 version = "0.1.0"
-source = { virtual = "." }
+source = { editable = "." }
 dependencies = [
     { name = "canaddress" },
     { name = "levenshtein" },
